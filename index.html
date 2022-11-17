@@ -2,11 +2,11 @@
 <html lang="en-US">
  <head>
     <meta charset="utf-8">
-    <title>Washington Parks</title>
+    <title>Seattle Features</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
-    <script src="http://d3js.org/d3.v5.min.js" type="text/JavaScript"></script>
+
     <style>
             body {
         margin: 0;
@@ -83,7 +83,8 @@
 
                 const layerIDs = [];
         const filterInput = document.getElementById('filter-input');
-        for (const feature of points3.features) {
+        
+             for (const feature of points3.features) {
             const symbol = feature.properties.icon;
             const layerID = `${symbol}`;
             
